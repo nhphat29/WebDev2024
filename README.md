@@ -1,7 +1,5 @@
-Student Info
+$${\color{blue}USTH}$$ **Web Application Development**
 =======================
-
-$${\color{blue}USTH}$$ **Web Application Development**  
   
 Group: $${\color{#74B72E}2}$$  
 
