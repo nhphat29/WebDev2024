@@ -18,5 +18,6 @@ Group: $${\color{#74B72E}2}$$
   | *Luong Ngoc Phuc*   | *22BI13358* |
   | *Nguyen Minh Quan*  | *22BI13374* |
   | *Do Hoang Son*      | *22BI13393* |
+  | *Nguyen Huy Hung*   | *BI12-183*  |
   
 </details>
