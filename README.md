@@ -10,7 +10,24 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+$${\color{blue}USTH}$$ **Web Application Development**  
+  
+Group: $${\color{#74B72E}2}$$  
+
+<details>
+  <summary>Topic</summary>
+  Topic ID & Present Order: $${\color{#F25278}random}$$ <br>
+  > $${\color{#A1045A}random}$$  
+</details>
+
+<details>
+  <summary>Members</summary>
+
+  |        Name         |      ID     |
+  |---------------------|-------------|
+  | *Nguyen Hoang Phat* | *22BI13356* |
+  | *Luong Ngoc Phuc*   | *22BI13358* |
+  | *Nguyen Minh Quan*  | *22BI13374* |
+  | *Do Hoang Son*      | *22BI13393* |
+  
+</details>
