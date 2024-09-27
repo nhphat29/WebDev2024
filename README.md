@@ -1,4 +1,4 @@
-$${\color{blue}USTH}$$ **Web Application Development**
+$${\color{#006494}USTH}$$ $${\color{#CA0123}Web \space Application \space Development}$$
 =======================
   
 Group: $${\color{#74B72E}2}$$  
