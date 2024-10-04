@@ -1,82 +1,158 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu ThaiExpress</title>
+    <title>ThaiExpress Menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .background-section {
-            background-image: url('image1.png'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat; /* Nếu ảnh bé, không lặp lại, phần background thừa bỏ trống */
-            height: 600px;
-        }
-
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px); /* Lam mo */
-        }
-
-        .navbar-brand img {
-            max-height: 40px;
-        }
-
-        .nav-link {
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: black; 
-            margin-right: 20px;
-        }
-
-        .nav-link:hover {
-            color: #f68b1f; 
-        }
-        
-        .form-container {
-            border: 1px solid #ccc; 
-            border-radius: 8px; /* bo tron goc */
-            padding: 20px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Do bong cho vien */
-            margin-top: 30px; 
-            background-color: #fff; 
-        }
-    </style>
+    <link href="menu_display.css" rel="stylesheet">
+    <link href="menu_image.css" rel="stylesheet">
 </head>
 <body>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Menu -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="discount.html">Discount</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-<!-- Menu background image -->
-<div class="background-section">
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="discount.html">Discount</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+
+    <h2 class="text-center">Our Menu</h2>
+    <div class="row">
+        <!-- Dish 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/pad-thai.jpg" class="card-img-top" alt="Pad Thai">
+                <div class="card-body">
+                    <h5 class="card-title">Pad Thai</h5>
+                    <p class="card-text">Stir-fried rice noodle with shrimp, tofu, peanuts, and tamarind sauce.</p>
+                    <p class="price">$12.99</p>
+                </div>
             </div>
         </div>
-    </nav>
+        <!-- Dish 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/tom-yum.jpg" class="card-img-top" alt="Tom Yum Soup">
+                <div class="card-body">
+                    <h5 class="card-title">Tom Yum Soup</h5>
+                    <p class="card-text">Spicy and sour Thai soup with shrimp, mushrooms, and lemongrass.</p>
+                    <p class="price">$9.99</p>
+                </div>
+            </div>
+        </div>
+        <!-- Dish 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/green-curry.jpg" class="card-img-top" alt="Green Curry">
+                <div class="card-body">
+                    <h5 class="card-title">Green Curry</h5>
+                    <p class="card-text">Traditional Thai green curry with chicken, coconut milk, and basil.</p>
+                    <p class="price">$13.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Dish 4 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/mango-sticky-rice.jpg" class="card-img-top" alt="Mango Sticky Rice">
+                <div class="card-body">
+                    <h5 class="card-title">Mango Sticky Rice</h5>
+                    <p class="card-text">Sweet mango served with sticky rice and coconut milk.</p>
+                    <p class="price">$7.99</p>
+                </div>
+            </div>
+        </div>
+        <!-- Dish 5 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/spring-rolls.jpg" class="card-img-top" alt="Spring Rolls">
+                <div class="card-body">
+                    <h5 class="card-title">Spring Rolls</h5>
+                    <p class="card-text">Crispy spring rolls filled with vegetables and served with sweet chili sauce.</p>
+                    <p class="price">$5.99</p>
+                </div>
+            </div>
+        </div>
+        <!-- Dish 6 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/panang-curry.jpg" class="card-img-top" alt="Panang Curry">
+                <div class="card-body">
+                    <h5 class="card-title">Panang Curry</h5>
+                    <p class="card-text">Rich Thai curry with tender beef and a creamy coconut base.</p>
+                    <p class="price">$14.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Dish 7 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/satay-chicken.jpg" class="card-img-top" alt="Satay Chicken">
+                <div class="card-body">
+                    <h5 class="card-title">Satay Chicken</h5>
+                    <p class="card-text">Grilled marinated chicken skewers served with peanut sauce.</p>
+                    <p class="price">$8.99</p>
+                </div>
+            </div>
+        </div>
+        <!-- Dish 8 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/larb-salad.jpg" class="card-img-top" alt="Larb Salad">
+                <div class="card-body">
+                    <h5 class="card-title">Larb Salad</h5>
+                    <p class="card-text">A spicy minced meat salad with herbs, lime juice, and fish sauce.</p>
+                    <p class="price">$11.99</p>
+                </div>
+            </div>
+        </div>
+        <!-- Dish 9 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/pineapple-fried-rice.jpg" class="card-img-top" alt="Pineapple Fried Rice">
+                <div class="card-body">
+                    <h5 class="card-title">Pineapple Fried Rice</h5>
+                    <p class="card-text">Stir-fried rice with pineapple, chicken, and cashew nuts.</p>
+                    <p class="price">$10.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+</body>
+</html>

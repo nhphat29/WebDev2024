@@ -2,99 +2,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ ThaiExpress</title>
+    <title>ThaiExpress Restaurant</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px); /* Lam mo */
-        }
-
-        .navbar-brand img {
-            max-height: 40px;
-        }
-
-        .nav-link {
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: black; 
-            margin-right: 20px;
-        }
-
-        .nav-link:hover {
-            color: #f68b1f; 
-        }
-        
-        .form-container {
-            border: 1px solid #ccc; 
-            border-radius: 8px; /* bo tron goc */
-            padding: 20px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Do bong cho vien */
-            margin-top: 30px; 
-            background-color: #fff; 
-        }
-        .carousel-inner {
-            margin-top:60px ;
-        }
-    </style>
+    
 </head>
+
 <body>
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-<!-- Menu -->
-<div>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="home.html">
-                <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="discount.html">Discount</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discount.html">Discount</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagetest_1.jpg" alt="IMG1" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="imagetest_2.png" alt="IMG2" class="d-block" style="width:100%">
             </div>
         </div>
-    </nav>
-</div>
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="imagetest_1.jpg" alt="IMG1" class="d-block" style="width:100%">
-        </div>
-        <div class="carousel-item">
-            <img src="imagetest_2.png" alt="IMG2" class="d-block" style="width:100%">
-        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
-<div class="fw-divider-space" style="padding-top: 50px;"></div>
+    <div class="fw-divider-space" style="padding-top: 50px;"></div>
 
 </body>
 </html>
