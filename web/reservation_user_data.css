@@ -1,11 +1,11 @@
-body {
+.bodyclass {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
 
-.container {
+.container1 {
   max-width: 600px; 
   margin: 100px auto;
   background-color: #ffffff;
