@@ -18,15 +18,3 @@
 .nav-link:hover {
     color: #f68b1f; 
 }
-
-.form-container {
-    border: 1px solid #ccc; 
-    border-radius: 8px; /* bo tron goc */
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Do bong cho vien */
-    margin-top: 30px; 
-    background-color: #fff; 
-}
-.carousel-inner {
-    margin-top:60px ;
-}

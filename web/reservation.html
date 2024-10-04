@@ -41,37 +41,67 @@
         </div>
     </nav>
 </div>
-<div class="fw-divider-space" style="padding-top: 50px;"></div>
-<div class="bodyclass"> 
-<div class="container1">
-    <h1>Restaurant Reservation</h1>
-    <form id="reservation-form">
-        <div class="form-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
 
-        <div class="form-group">
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-        </div>
+<div class="bodyclass">
+    <div class="container1">
+        <h1>Restaurant Reservation</h1>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-        <div class="form-group">
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required>
-        </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
 
-        <div class="form-group">
-            <label for="guests">Number of Guests:</label>
-            <input type="number" id="guests" name="guests" min="1" required>
-        </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
 
-        <button type="submit">Reserve Now</button>
-    </form>
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+            </div>
 
-    <div id="confirmation" class="confirmation"></div>
+            <button type="submit" id="openDialog">Reserve Now</button>
+
+        </form>
+
+        <dialog id="myDialog">
+            <h2>Thank you!</h2>
+            <p>Your reservation has been made.</p>
+            <button id="closeDialog">Close</button>
+        </dialog>
+
+        <div id="confirmation" class="confirmation"></div>
+    </div>
 </div>
-</div>
 
+<script>
+    const dialog = document.getElementById("myDialog");
+    const openButton = document.getElementById("openDialog");
+    const closeButton = document.getElementById("closeDialog");
+    const form = document.getElementById("reservation-form");
+
+    // open dialog
+    form.addEventListener("submit", (event) => {
+        // ngan tu dong mo dialog
+        event.preventDefault();
+
+        // check valid
+        if (form.reportValidity()) {
+            // neu valid ok, mo dialog
+            dialog.showModal();
+        }
+    });
+
+    // close dialog
+    closeButton.addEventListener("click", () => {
+        dialog.close();
+    });
+</script>
 </body>
 </html>
