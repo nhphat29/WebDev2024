@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt bàn ThaiExpress</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .background-section {
+            background-image: url('image_reservation.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; /* Nếu ảnh bé, không lặp lại, phần background thừa bỏ trống */
+            height: 600px;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px); /* Lam mo */
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: black; 
+            margin-right: 20px;
+        }
+
+        .nav-link:hover {
+            color: #f68b1f; 
+        }
+        
+        .form-container {
+            border: 1px solid #ccc; 
+            border-radius: 8px; /* bo tron goc */
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Do bong cho vien */
+            margin-top: 30px; 
+            background-color: #fff; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menu background image -->
+<div class="background-section">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discount.html">Discount</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="fw-divider-space" style="padding-top: 50px;"></div>
+<!-- Form dat ban -->
+<div class="container mt-3">
+    <div class="form-container">
+        <div class="mb-3 mt-3">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Your name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="phone">Phone number:</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Your phone number" name="phone">
+        </div>
+        <button type="submit" class="btn btn-primary">Make a reservation</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+1. box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+0 (Horizontal Offset):
+Giá trị đầu tiên chỉ định độ lệch ngang (horizontal offset) của bóng.
+Trong trường hợp này, 0 có nghĩa là bóng sẽ không bị lệch sang trái hay phải (nằm ngay bên dưới phần tử).
+
+4px (Vertical Offset):
+Giá trị thứ hai chỉ định độ lệch dọc (vertical offset) của bóng.
+4px có nghĩa là bóng sẽ bị lệch xuống 4 pixel so với phần tử.
+
+8px (Blur Radius):
+Giá trị thứ ba chỉ định độ mờ của bóng (blur radius).
+8px có nghĩa là bóng sẽ được làm mờ với bán kính 8 pixel, tạo ra một hiệu ứng mềm mại và tự nhiên hơn cho bóng.
+
+rgba(0, 0, 0, 0.2) (Color):
+Giá trị cuối cùng chỉ định màu sắc của bóng.
+Ở đây, rgba(0, 0, 0, 0.2) đại diện cho màu đen (rgb(0, 0, 0)) với độ trong suốt (alpha) là 0.2, tức là bóng sẽ có màu đen nhạt, gần như trong suốt.
+
+
+-----------------------------
+
+2. <nav class="navbar navbar-expand-lg fixed-top">
+
+navbar: tạo thanh điều hướng cơ bản
+
+navbar-expand-lg: khi chạy trên các thiết bị có màn hình nhỏ hơn, sẽ tự động chuyển thanh điều
+hướng ngang thành thanh điều hướng dọc (có thể k cần)
+
+fixed-top: thanh điều hướng luôn ở trên đầu trang. nếu kéo xuống, thanh sẽ vẫn
+ở đầu trang (đi theo)
+
+-------------------------
+3. container:
+Tạo ra một khung chứa có chiều rộng cố định, căn giữa trong trang. 
+Kích thước của khung chứa này sẽ thay đổi theo kích thước màn hình (responsive). 
+Trên các thiết bị lớn hơn, nó sẽ có chiều rộng tối đa là 1140px (hoặc lớn hơn trong các phiên bản Bootstrap mới).
