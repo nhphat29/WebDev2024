@@ -6,42 +6,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
 </head>
 
 <body>
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
-    <div>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="home.html">
-                    <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="discount.html">Discount</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservation.html">Reservation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+        <div>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="logo-thai.png" alt="ThaiExpress Logo" width="150">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="discount.html">Discount</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
+
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -51,7 +51,7 @@
                 <img src="imagetest_2.png" alt="IMG2" class="d-block" style="width:100%">
             </div>
         </div>
-        
+
         <!-- Left and right controls/icons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -60,7 +60,52 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
+
+    <!-- Brand Description Section -->
+    <div id="brand-section" class="container py-5 position-relative">
+        <!-- Image -->
+        <div class="row justify-content-end">
+            <div class="col-md-6">
+                <img src="9.png" alt="Featured Dish" class="img-fluid rounded shadow dish-image">
+            </div>
+        </div>
+
+        <!-- Boxed Brand Description Overlaid on Image -->
+        <div class="brand-box-overlay p-4 position-absolute">
+            <h2 class="brand-title">BRAND</h2>
+            <p class="brand-desc">
+                Our motto: All for the customer.
+                From the genuine desire of our customers to enjoy dishes in a comfortable, elegant, luxurious, and cozy space, and to experience authentic Thai specialties at the most reasonable prices.            </p>
+            <p class="brand-desc">
+                The clear expression of Thai cuisine is reflected in the unique presentation of the dishes and the flavors of each one. 
+                To date, we have successfully developed 350 restaurants across 10 countries in 8 years.            </p>
+        </div>
+    </div>
+
+    <!-- Space Description Section -->
+    <div id="space-section" class="container py-5 position-relative">
+        <!-- Image -->
+        <div class="row justify-content-end">
+            <div class="col-md-6">
+                <img src="khong_gian_thai_express.png" alt="Featured Dish" class="img-fluid rounded shadow dish-image">
+            </div>
+        </div>
+
+        <!-- Boxed Space Description Overlaid on Image -->
+        <div class="space-box-overlay p-4 position-absolute">
+            <h2 class="space-title">SPACE</h2>
+            <p class="space-desc">
+                The space at Thai Express combines both traditional and modern elements, while still providing diners with a strong sense of the Land of the Golden Pagoda.                
+                From the intricate decorative patterns on the walls and ceiling to the elegant design of the bar and kitchen, Thai Express truly feels like a miniature Thailand right in Vietnam.            
+            </p>
+            <p class="space-desc">
+                The walls, as well as the tables and chairs, are decorated in a dominant orange-yellow tone, creating a connection with nature, just like in Thai culture.            
+            </p>
+        </div>
+    </div>
+
     <div class="fw-divider-space" style="padding-top: 50px;"></div>
 
+    <script src="home_automatic_scroll.js"></script>
 </body>
 </html>
