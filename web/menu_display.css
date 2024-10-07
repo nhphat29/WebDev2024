@@ -1,14 +1,15 @@
 .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    height: 90%; /* Increased height */
-    width: 90%; /* Added width to make the card larger */
-    margin: auto; /* Center the card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    height: 90%;
+    width: 90%;
+    margin: auto;
 }
 
+
 .card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
@@ -19,15 +20,71 @@
 
 .card-body {
     text-align: center;
-    padding: 30px; /* Added padding for better spacing */
+    padding: 30px; 
 }
 
 .price {
-    font-size: 20px; /* Increased font size for better visibility */
+    font-size: 20px; 
     color: #f68b1f;
     font-weight: bold;
 }
 
 h2.text-center {
-    margin-top: 60px; /* Adjusted margin to move the heading closer */
+    margin-top: 60px; 
 }
+
+@keyframes flipIn {
+    from {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+.card {
+    opacity: 0;
+    animation: flipIn 0.8s ease forwards;
+    transform-style: preserve-3d; 
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.card:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.card:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.card:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+
+
