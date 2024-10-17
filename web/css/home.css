@@ -31,7 +31,7 @@
     background-color: #fff;
     border: 2px solid #eaeaea;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* note 1 */
     width: 50%; /* Adjust the size of the brand box */
     animation: fadeIn 2s ease-in-out; /* Apply fade-in effect */
 }
@@ -43,7 +43,7 @@
     background-color: #fff;
     border: 2px solid #eaeaea;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* note 1 */
     width: 50%; /* Adjust the size of the space box */
     animation: fadeIn 2s ease-in-out; /* Apply fade-in effect */
 }

@@ -1,4 +1,4 @@
-1. box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+*1. box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
 
 0 (Horizontal Offset):
 Giá trị đầu tiên chỉ định độ lệch ngang (horizontal offset) của bóng.
@@ -19,7 +19,7 @@ Giá trị cuối cùng chỉ định màu sắc của bóng.
 
 -----------------------------
 
-2. <nav class="navbar navbar-expand-lg fixed-top">
+*2. <nav class="navbar navbar-expand-lg fixed-top">
 
 navbar: tạo thanh điều hướng cơ bản
 
@@ -28,9 +28,7 @@ hướng ngang thành thanh điều hướng dọc (có thể k cần)
 
 fixed-top: thanh điều hướng luôn ở trên đầu trang. nếu kéo xuống, thanh sẽ vẫn
 ở đầu trang (đi theo)
+--------------------------
+*3. <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
--------------------------
-3. container:
-Tạo ra một khung chứa có chiều rộng cố định, căn giữa trong trang. 
-Kích thước của khung chứa này sẽ thay đổi theo kích thước màn hình (responsive). 
-Trên các thiết bị lớn hơn, nó sẽ có chiều rộng tối đa là 1140px (hoặc lớn hơn trong các phiên bản Bootstrap mới).
+justify-content-end: căn chỉnh nội dung sang bên phải.
