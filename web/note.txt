@@ -18,7 +18,6 @@ Giá trị cuối cùng chỉ định màu sắc của bóng.
 
 
 -----------------------------
-
 *2. <nav class="navbar navbar-expand-lg fixed-top">
 
 navbar: tạo thanh điều hướng cơ bản
@@ -28,7 +27,14 @@ hướng ngang thành thanh điều hướng dọc (có thể k cần)
 
 fixed-top: thanh điều hướng luôn ở trên đầu trang. nếu kéo xuống, thanh sẽ vẫn
 ở đầu trang (đi theo)
---------------------------
+-----------------------------
 *3. <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
 justify-content-end: căn chỉnh nội dung sang bên phải.
+-----------------------------
+*4. onload là event của class window:
+	event onload: đảm bảo mọi thứ được chạy trong function chỉ khi webpage đã được load hoàn toàn
+	getElementById: để lấy ra Id của vị trí tự động scroll đến
+	scrollIntoView: là phương thức để scroll đến Id đã cài đặt
+	behavior: 'smooth' tại hiệu ứng scroll smooth
+
