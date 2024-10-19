@@ -16,9 +16,18 @@ rgba(0, 0, 0, 0.2) (Color):
 Giá trị cuối cùng chỉ định màu sắc của bóng.
 Ở đây, rgba(0, 0, 0, 0.2) đại diện cho màu đen (rgb(0, 0, 0)) với độ trong suốt (alpha) là 0.2, tức là bóng sẽ có màu đen nhạt, gần như trong suốt.
 
-
 -----------------------------
-*2. <nav class="navbar navbar-expand-lg fixed-top">
+*2. <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+justify-content-end: căn chỉnh nội dung sang bên phải.
+-----------------------------
+*3. onload là event của class window:
+	event onload: đảm bảo mọi thứ được chạy trong function chỉ khi webpage đã được load hoàn toàn
+	getElementById: để lấy ra Id của vị trí tự động scroll đến
+	scrollIntoView: là phương thức để scroll đến Id đã cài đặt
+	behavior: 'smooth' tại hiệu ứng scroll smooth
+-----------------------------
+*4. <nav class="navbar navbar-expand-lg fixed-top">
 
 navbar: tạo thanh điều hướng cơ bản
 
@@ -27,14 +36,7 @@ hướng ngang thành thanh điều hướng dọc (có thể k cần)
 
 fixed-top: thanh điều hướng luôn ở trên đầu trang. nếu kéo xuống, thanh sẽ vẫn
 ở đầu trang (đi theo)
------------------------------
-*3. <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-
-justify-content-end: căn chỉnh nội dung sang bên phải.
------------------------------
-*4. onload là event của class window:
-	event onload: đảm bảo mọi thứ được chạy trong function chỉ khi webpage đã được load hoàn toàn
-	getElementById: để lấy ra Id của vị trí tự động scroll đến
-	scrollIntoView: là phương thức để scroll đến Id đã cài đặt
-	behavior: 'smooth' tại hiệu ứng scroll smooth
-
+------------------------------
+*5. Navbar toggler là một thành phần trong giao diện người dùng, đặc biệt phổi biến
+	Nó là một nút bấm được dùng để mở và đóng thanh điều hướng (navbar) trên thiết bị có màn hình nhỏ 
+	khi nhấn vào navbar toggler nó sẽ mở ra hoặc thu gọn thanh điều hướng, giúp tiết kiệm không gian trên màn hình nhỏ mà vẫn cung cấp khả năng truy cập các mục tiêu khi cần thiết
